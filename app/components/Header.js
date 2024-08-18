@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { EvilIcons, Fontisto } from "react-native-vector-icons";
 import SearchBar from "./SearchBar";
@@ -13,12 +13,22 @@ const Header = () => {
           justifyContent: "space-between",
         }}
       >
-        <EvilIcons name="location" size={30} color="black" />
-        <View style={{ marginTop: 10, alignItems: "center", marginRight: 165 }}>
+        <View style={{ marginLeft: 15 }}>
+          <EvilIcons name="location" size={30} color="black" />
+        </View>
+
+        <View
+          style={{
+            marginTop: 10,
+            marginLeft: 6,
+            alignItems: "center",
+            marginRight: 175,
+          }}
+        >
           <Text style={{ fontSize: 13, color: "#6c757d" }}>Delivering To</Text>
           <Text style={{ fontSize: 15, fontWeight: "700" }}>My Home</Text>
         </View>
-        <View
+        <TouchableOpacity
           style={{
             marginTop: 10,
             backgroundColor: "black",
@@ -27,12 +37,13 @@ const Header = () => {
             borderRadius: 20,
             alignItems: "center",
             justifyContent: "center",
-            marginRight: 20,
+            marginRight: 10,
           }}
         >
           <Fontisto name="bell" size={20} color="#6c757d" />
-        </View>
-        <View
+        </TouchableOpacity>
+
+        <TouchableOpacity
           style={{
             marginTop: 10,
             height: 35,
@@ -46,7 +57,7 @@ const Header = () => {
             source={require("../../assets/avatar.jpg")}
             style={{ width: 35, height: 35, resizeMode: "cover" }}
           />
-        </View>
+        </TouchableOpacity>
       </View>
       <SearchBar />
     </View>
