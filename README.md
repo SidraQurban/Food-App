@@ -1,5 +1,5 @@
-    **Food App**
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    **FOOD APP**
+  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  Features:
  <br>
 Home Screen:
@@ -16,9 +16,9 @@ Search Screen:
 <br>
 * Back Toggle: Allows navigation back to the home screen.
 * Cards: Cards displaying food images, discount text, and prices. Includes buttons for increasing/decreasing quantity and adding items to the cart.
-* Add Button: Navigates to a "detailed image" card when the button is pressed.
+* Add Button: Navigates to a "detailed image screen" when the button is pressed.
 
-Image Detail Card:
+Image Detail Screen:
 <br>
 * Image Display: Shows a detailed image of the selected food item.
 * Go Back Function: Toggles navigation back to the "search screen".
