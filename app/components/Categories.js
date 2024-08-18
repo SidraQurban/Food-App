@@ -52,11 +52,12 @@ const Categories = () => {
         {categoryData2.map(({ img, label }, index) => (
           <View
             key={index}
-            style={{ alignItems: "center", marginHorizontal: 12 }}
+            style={{ alignItems: "center", marginHorizontal: 8 }}
           >
             <TouchableOpacity
               style={{
                 height: 70,
+                marginLeft: 8,
                 width: 70,
                 backgroundColor: "#dee2e6",
                 justifyContent: "center",
