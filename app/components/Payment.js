@@ -185,11 +185,11 @@ const Payment = () => {
               backgroundColor: "#d6ccc2",
             }}
           />
-          <View style={{ top: 10, marginLeft: 10 }}>
+          <TouchableOpacity style={{ top: 10, marginLeft: 10 }}>
             <Text style={{ fontSize: 15, color: "red", fontWeight: "700" }}>
               View details
             </Text>
-          </View>
+          </TouchableOpacity>
         </View>
         {/* Now button */}
         <View style={{ top: 55, marginLeft: 10 }}>
@@ -233,7 +233,7 @@ const Payment = () => {
             backgroundColor: "#d6ccc2",
           }}
         />
-        <View
+        <TouchableOpacity
           style={{
             marginLeft: 11,
             width: 370,
@@ -249,7 +249,7 @@ const Payment = () => {
           }}
         >
           <Text style={{ color: "#fff", fontSize: 15 }}>Confirm $129.00</Text>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
