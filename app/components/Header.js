@@ -20,7 +20,7 @@ const Header = () => {
         <View
           style={{
             marginTop: 10,
-            marginLeft: 6,
+            marginLeft: 2,
             alignItems: "center",
             marginRight: 175,
           }}
