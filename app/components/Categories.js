@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { categoryData1, categoryData2 } from "../Constant";
 
@@ -10,9 +10,9 @@ const Categories = () => {
         {categoryData1.map(({ img, label }, index) => (
           <View
             key={index}
-            style={{ alignItems: "center", marginHorizontal: 10 }}
+            style={{ alignItems: "center", marginHorizontal: 12 }}
           >
-            <View
+            <TouchableOpacity
               style={{
                 height: 70,
                 width: 70,
@@ -25,7 +25,7 @@ const Categories = () => {
                 source={img}
                 style={{ resizeMode: "cover", height: 70, width: 70 }}
               />
-            </View>
+            </TouchableOpacity>
             <Text
               style={{
                 marginTop: 10,
@@ -52,9 +52,9 @@ const Categories = () => {
         {categoryData2.map(({ img, label }, index) => (
           <View
             key={index}
-            style={{ alignItems: "center", marginHorizontal: 10 }}
+            style={{ alignItems: "center", marginHorizontal: 12 }}
           >
-            <View
+            <TouchableOpacity
               style={{
                 height: 70,
                 width: 70,
@@ -67,7 +67,7 @@ const Categories = () => {
                 source={img}
                 style={{ resizeMode: "cover", height: 70, width: 70 }}
               />
-            </View>
+            </TouchableOpacity>
             <Text
               style={{
                 marginTop: 10,
