@@ -65,11 +65,11 @@ const DeliveryLocation = () => {
             <Text style={{ fontSize: 17, fontWeight: "bold" }}>
               4.6km distance
             </Text>
-            <View style={{ marginLeft: 125 }}>
+            <TouchableOpacity style={{ marginLeft: 125 }}>
               <Text style={{ fontSize: 14, fontWeight: "bold" }}>
                 Change location
               </Text>
-            </View>
+            </TouchableOpacity>
           </View>
           <View style={{ marginLeft: 20, bottom: 15 }}>
             <Text style={{ fontSize: 13 }}>
@@ -100,7 +100,7 @@ const DeliveryLocation = () => {
                 Edit address details
               </Text>
             </View>
-            <View
+            <TouchableOpacity
               style={{
                 marginLeft: 15,
                 height: 31,
@@ -114,10 +114,10 @@ const DeliveryLocation = () => {
               }}
             >
               <Text style={{ fontSize: 14, color: "black" }}>Add note</Text>
-            </View>
+            </TouchableOpacity>
           </View>
           {/* xyz address */}
-          <View
+          <TouchableOpacity
             style={{
               marginLeft: 11,
               width: 370,
@@ -132,7 +132,7 @@ const DeliveryLocation = () => {
             }}
           >
             <Text style={{ fontSize: 15 }}>XYZ</Text>
-          </View>
+          </TouchableOpacity>
 
           {/* Item */}
           <Text
@@ -288,7 +288,7 @@ const DeliveryLocation = () => {
             </View>
 
             {/* Note Button */}
-            <View
+            <TouchableOpacity
               style={{
                 alignSelf: "flex-end",
                 marginRight: 240,
@@ -307,7 +307,7 @@ const DeliveryLocation = () => {
               >
                 Note
               </Text>
-            </View>
+            </TouchableOpacity>
           </View>
         </View>
         {/* horizontal line */}
@@ -337,9 +337,9 @@ const DeliveryLocation = () => {
         }}
       >
         <Text style={{ fontSize: 15, color: "grey" }}>Enter Promo Code</Text>
-        <View style={{ marginLeft: 200 }}>
+        <TouchableOpacity style={{ marginLeft: 200 }}>
           <Ionicons name="copy-outline" size={20} />
-        </View>
+        </TouchableOpacity>
       </View>
       <Payment />
       <Footer />
