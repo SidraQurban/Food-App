@@ -14,7 +14,7 @@ Home Screen:
 <img width="200" alt="home" src="https://github.com/user-attachments/assets/449e2f19-935d-4fe5-8b88-679ae2aa0ed7">
 <img width="206" alt="homee" src="https://github.com/user-attachments/assets/7f3ae164-adce-4184-8765-0e9cf2f50c42">
 <br>
-
+<br>
 Search Screen:
 <br>
 * Back Toggle: Allows navigation back to the home screen.
@@ -22,7 +22,7 @@ Search Screen:
 * Add Button: Navigates to a "Add to Cart  screen" when the button is pressed.
 <img width="209" alt="search" src="https://github.com/user-attachments/assets/71f26265-b6c8-448d-924c-8b9a122fe7e9">
 <br>
-
+<br>
 Add to Cart Screen:
 <br>
 * Image Display: Shows a detailed image of the selected food item.
@@ -33,7 +33,7 @@ Add to Cart Screen:
 * Add to cart: Navigates to a "Order detail screen"  when the button is pressed.
  <img width="211" alt="add" src="https://github.com/user-attachments/assets/3c952337-7270-4088-8411-b2fe6e2c0455">
 <br>
-
+<br>
 Order Detail Screen:
 <br>
 * Delivery Location Container: Shows the delivery address with options to edit address details and add notes.
