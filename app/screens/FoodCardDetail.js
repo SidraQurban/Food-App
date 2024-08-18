@@ -121,7 +121,7 @@ const FoodCardDetail = () => {
                 Extra discount
               </Text>
             </View>
-            <View
+            <TouchableOpacity
               style={{
                 left: 190,
                 top: 10,
@@ -134,7 +134,7 @@ const FoodCardDetail = () => {
               }}
             >
               <Entypo name="share" size={20} color="grey" />
-            </View>
+            </TouchableOpacity>
           </View>
         </View>
 
