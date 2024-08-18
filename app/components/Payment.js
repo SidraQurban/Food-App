@@ -1,7 +1,10 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 
 const Payment = () => {
+  const navigation = useNavigation();
+
   return (
     <View>
       <View
@@ -234,6 +237,7 @@ const Payment = () => {
           }}
         />
         <TouchableOpacity
+          onPress={() => navigation.navigate("Home")}
           style={{
             marginLeft: 11,
             width: 370,
