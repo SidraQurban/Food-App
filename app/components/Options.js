@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 
 const Options = () => {
@@ -11,7 +11,7 @@ const Options = () => {
         gap: 4,
       }}
     >
-      <View
+      <TouchableOpacity
         style={{
           height: 40,
           width: 120,
@@ -22,8 +22,9 @@ const Options = () => {
         }}
       >
         <Text style={{ color: "#fff" }}>Order again</Text>
-      </View>
-      <View
+      </TouchableOpacity>
+
+      <TouchableOpacity
         style={{
           height: 40,
           width: 120,
@@ -34,8 +35,9 @@ const Options = () => {
         }}
       >
         <Text style={{ color: "black" }}>Recommended</Text>
-      </View>
-      <View
+      </TouchableOpacity>
+
+      <TouchableOpacity
         style={{
           height: 40,
           width: 120,
@@ -46,7 +48,7 @@ const Options = () => {
         }}
       >
         <Text style={{ color: "black" }}>Festive menu</Text>
-      </View>
+      </TouchableOpacity>
     </View>
   );
 };
