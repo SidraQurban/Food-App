@@ -38,12 +38,13 @@ const Offer = () => {
             </Text>
           </TouchableOpacity>
         </View>
-
-        {/* Image */}
-        <Image
-          source={require("../../assets/burger.png")}
-          style={{ resizeMode: "cover", height: 160, width: 160 }}
-        />
+        <TouchableOpacity>
+          {/* Image */}
+          <Image
+            source={require("../../assets/burger.png")}
+            style={{ resizeMode: "cover", height: 160, width: 160 }}
+          />
+        </TouchableOpacity>
       </View>
 
       {/* Horizontal lines */}
