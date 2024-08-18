@@ -11,6 +11,9 @@ Home Screen:
 * Option Buttons: Provides options for "Order Again", "Recommended Food", and "Festive Menu".
 * Food Image Section: Displays a food image with additional information.
 * Footer: Contains 5 icons with labels for navigation.
+<img width="200" alt="home" src="https://github.com/user-attachments/assets/449e2f19-935d-4fe5-8b88-679ae2aa0ed7">
+<img width="206" alt="homee" src="https://github.com/user-attachments/assets/7f3ae164-adce-4184-8765-0e9cf2f50c42">
+<br>
 
 Search Screen:
 <br>
