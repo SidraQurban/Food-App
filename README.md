@@ -15,7 +15,7 @@ Home Screen:
 Search Screen:
 <br>
 * Back Toggle: Allows navigation back to the home screen.
-*  Cards: Cards displaying food images, discount text, and prices. Includes buttons for increasing/decreasing quantity and adding items to the cart.
+* Cards: Cards displaying food images, discount text, and prices. Includes buttons for increasing/decreasing quantity and adding items to the cart.
 * Add Button: Navigates to a detailed image card when the "Add" button is pressed.
 <br>
 
