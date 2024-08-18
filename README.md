@@ -19,11 +19,11 @@ Search Screen:
 <br>
 * Back Toggle: Allows navigation back to the home screen.
 * Cards: Cards displaying food images, discount text, and prices. Includes buttons for increasing/decreasing quantity and adding items to the cart.
-* Add Button: Navigates to a "detailed image screen" when the button is pressed.
+* Add Button: Navigates to a "Add to Cart  screen" when the button is pressed.
 <img width="209" alt="search" src="https://github.com/user-attachments/assets/71f26265-b6c8-448d-924c-8b9a122fe7e9">
 <br>
 
-Image Detail Screen:
+Add to Cart Screen:
 <br>
 * Image Display: Shows a detailed image of the selected food item.
 * Go Back Function: Toggles navigation back to the "search screen".
