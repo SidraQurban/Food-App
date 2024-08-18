@@ -176,7 +176,7 @@ const FoodCard = () => {
               CDF 320
             </Text>
             {/* Note text */}
-            <View
+            <TouchableOpacity
               style={{
                 marginLeft: 10,
                 bottom: 123,
@@ -198,7 +198,7 @@ const FoodCard = () => {
               >
                 Note
               </Text>
-            </View>
+            </TouchableOpacity>
 
             {/* subCount */}
             <TouchableOpacity

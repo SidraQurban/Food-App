@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { Ionicons, AntDesign, Entypo } from "react-native-vector-icons";
 
@@ -21,60 +21,72 @@ const Footer = () => {
         }}
       >
         <View style={{ alignItems: "center" }}>
-          <Ionicons name="home-sharp" size={25} color="#001219" />
+          <TouchableOpacity>
+            <Ionicons name="home-sharp" size={25} color="#001219" />
+          </TouchableOpacity>
+
           <Text style={{ marginTop: 3 }}>Home</Text>
         </View>
 
         <View style={{ alignItems: "center" }}>
-          <Ionicons name="heart-outline" size={25} color="#6c757d" />
+          <TouchableOpacity>
+            <Ionicons name="heart-outline" size={25} color="#6c757d" />
+          </TouchableOpacity>
           <Text style={{ marginTop: 3 }}>Activities</Text>
         </View>
 
         <View style={{ marginBottom: 45, alignItems: "center" }}>
-          <View
-            style={{
-              height: 70,
-              width: 60,
-              backgroundColor: "black",
-              transform: [{ rotate: "45deg" }],
-              borderRadius: 23,
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          ></View>
-          <View style={{ bottom: 50 }}>
-            <Ionicons name="cart" size={27} color="#fff" />
+          <TouchableOpacity>
             <View
               style={{
-                backgroundColor: "red",
-                borderRadius: 30,
-                bottom: 35,
-                height: 15,
-                width: 15,
-                left: 18,
+                height: 70,
+                width: 60,
+                backgroundColor: "black",
+                transform: [{ rotate: "45deg" }],
+                borderRadius: 23,
+                alignItems: "center",
+                justifyContent: "center",
               }}
-            >
-              <Text
+            ></View>
+            <View style={{ bottom: 50 }}>
+              <Ionicons name="cart" size={27} color="#fff" />
+              <View
                 style={{
-                  color: "#fff",
-                  textAlign: "center",
+                  backgroundColor: "red",
+                  borderRadius: 30,
+                  bottom: 35,
+                  height: 15,
+                  width: 15,
+                  left: 18,
                 }}
               >
-                7
-              </Text>
+                <Text
+                  style={{
+                    color: "#fff",
+                    textAlign: "center",
+                  }}
+                >
+                  7
+                </Text>
+              </View>
             </View>
-          </View>
-
+          </TouchableOpacity>
           <Text style={{ marginTop: -30, color: "black" }}>Cart</Text>
         </View>
 
         <View style={{ alignItems: "center" }}>
-          <Entypo name="message" size={25} color="#6c757d" />
+          <TouchableOpacity>
+            <Entypo name="message" size={25} color="#6c757d" />
+          </TouchableOpacity>
+
           <Text style={{ marginTop: 3 }}>Messages</Text>
         </View>
 
         <View style={{ alignItems: "center" }}>
-          <AntDesign name="user" size={25} color="#6c757d" />
+          <TouchableOpacity>
+            <AntDesign name="user" size={25} color="#6c757d" />
+          </TouchableOpacity>
+
           <Text style={{ marginTop: 3 }}>Profile</Text>
         </View>
       </View>
