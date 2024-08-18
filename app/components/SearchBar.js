@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, TouchableOpacity } from "react-native";
 import React from "react";
 import { Fontisto, Feather } from "react-native-vector-icons";
 import { useNavigation } from "@react-navigation/native";
@@ -46,13 +46,13 @@ const SearchBar = () => {
         ></View>
 
         {/* mic icon */}
-        <View
+        <TouchableOpacity
           style={{
-            left: 120,
+            left: 125,
           }}
         >
           <Feather name="mic" size={20} color="#8b8c89" />
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
