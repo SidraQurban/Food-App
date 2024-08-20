@@ -57,7 +57,7 @@ const SearchScreen = () => {
 
       <FoodCard />
       {/* footer */}
-      <View style={{ top: 280 }}>
+      <View style={{ top: 240 }}>
         <Footer />
       </View>
     </View>

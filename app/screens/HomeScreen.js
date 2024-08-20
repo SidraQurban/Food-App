@@ -9,7 +9,8 @@ import Card from "../components/Card";
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#f8f8f8" }}>
+      <StatusBar barStyle="dark-content" backgroundColor="#f8f8f8" />
       <ScrollView contentContainerStyle={{ flexGrow: 1 }} style={{ flex: 1 }}>
         <Header />
         <Categories />
@@ -18,7 +19,6 @@ const HomeScreen = () => {
         <Card />
         <Footer />
       </ScrollView>
-      <StatusBar style="auto" />
     </SafeAreaView>
   );
 };
