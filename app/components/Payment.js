@@ -237,7 +237,6 @@ const Payment = () => {
           }}
         />
         <TouchableOpacity
-          onPress={() => navigation.navigate("Home")}
           style={{
             marginLeft: 11,
             width: 370,

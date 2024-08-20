@@ -54,6 +54,7 @@ const DeliveryLocation = () => {
               width: 370,
               top: 20,
               marginRight: 15,
+
               height: 70,
               borderWidth: 1,
               borderColor: "#d6ccc2",
@@ -291,7 +292,7 @@ const DeliveryLocation = () => {
             <TouchableOpacity
               style={{
                 alignSelf: "flex-end",
-                marginRight: 240,
+                // marginRight: 240,
                 bottom: 215,
                 borderColor: "#eaeaea",
                 borderWidth: 2,

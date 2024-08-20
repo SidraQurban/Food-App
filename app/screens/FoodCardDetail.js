@@ -30,7 +30,7 @@ const FoodCardDetail = () => {
 
   return (
     <View style={{ flex: 1 }}>
-      <View>
+      <View style={{ flex: 1 }}>
         <ImageBackground
           source={require("../../assets/friedrice.jpg")}
           style={{ resizeMode: "contain", height: 250 }}
@@ -40,8 +40,8 @@ const FoodCardDetail = () => {
             onPress={() => navigation.goBack()}
             style={{
               flexDirection: "row",
-              marginTop: 5,
-              padding: 10,
+              marginTop: 10,
+              paddingHorizontal: 10,
             }}
           >
             <Ionicons name="chevron-back" size={20} color="black" />
@@ -54,11 +54,12 @@ const FoodCardDetail = () => {
           <TouchableOpacity onPress={() => navigation.navigate("Home")}>
             <View
               style={{
-                marginLeft: 345,
-                marginTop: -20,
-                height: 25,
-                width: 25,
-                borderRadius: 20,
+                position: "absolute",
+                top: -13,
+                right: 10,
+                height: 30,
+                width: 30,
+                borderRadius: 15,
                 backgroundColor: "#fff",
                 justifyContent: "center",
                 alignItems: "center",
@@ -69,9 +70,9 @@ const FoodCardDetail = () => {
           </TouchableOpacity>
         </ImageBackground>
 
-        <View style={{ top: 10, marginLeft: 10 }}>
+        <View style={{ padding: 10 }}>
           {/* Label */}
-          <Text style={{ fontSize: 19, fontWeight: 700 }}>
+          <Text style={{ fontSize: 19, fontWeight: "700" }}>
             Bottega's Fried Rice
           </Text>
 
@@ -82,11 +83,9 @@ const FoodCardDetail = () => {
           {/* Price */}
           <View
             style={{
-              top: 10,
               flexDirection: "row",
-              justifyContent: "space-between",
-              marginLeft: 5,
-              marginRight: 250,
+              gap: 20,
+              marginVertical: 10,
             }}
           >
             <Text style={{ color: "black", fontWeight: "bold", fontSize: 15 }}>
@@ -105,8 +104,14 @@ const FoodCardDetail = () => {
               <Text style={{ color: "grey", fontSize: 15 }}>CDF 170</Text>
             </View>
           </View>
-          <View style={{ flexDirection: "row", top: 20 }}>
-            <View
+          <View
+            style={{
+              flexDirection: "row",
+              top: 5,
+              justifyContent: "space-between",
+            }}
+          >
+            <TouchableOpacity
               style={{
                 height: 32,
                 width: 110,
@@ -114,17 +119,15 @@ const FoodCardDetail = () => {
                 borderRadius: 15,
                 alignItems: "center",
                 justifyContent: "center",
-                paddingBottom: 5,
+                marginRight: 10,
               }}
             >
               <Text style={{ color: "#fff", fontSize: 13 }}>
                 Extra discount
               </Text>
-            </View>
+            </TouchableOpacity>
             <TouchableOpacity
               style={{
-                left: 190,
-                top: 10,
                 height: 35,
                 width: 35,
                 borderRadius: 25,
@@ -143,8 +146,8 @@ const FoodCardDetail = () => {
           style={{
             height: 1,
             width: "100%",
-            backgroundColor: "#d6ccc2",
-            marginTop: 50,
+            backgroundColor: "#adb5bd",
+            marginTop: 10,
           }}
         />
 
@@ -160,7 +163,7 @@ const FoodCardDetail = () => {
               marginRight: 20,
               height: 80,
               borderWidth: 1,
-              borderColor: "#d6ccc2",
+              borderColor: "#adb5bd",
               padding: 10,
               textAlignVertical: "top",
             }}
@@ -172,78 +175,75 @@ const FoodCardDetail = () => {
           style={{
             height: 1,
             width: "100%",
-            backgroundColor: "#d6ccc2",
-            marginTop: 110,
+            backgroundColor: "#adb5bd",
+            marginTop: 115,
           }}
         />
 
         {/* subCount */}
-        <TouchableOpacity
-          style={{
-            bottom: -20,
-            marginLeft: 30,
-            backgroundColor: "#fff",
-            borderColor: "grey",
-            borderWidth: 1,
-            borderRadius: 20,
-            justifyContent: "center",
-            alignItems: "center",
-            width: 23,
-            height: 23,
-          }}
-          onPress={handleDecrement}
-        >
-          <AntDesign name="minus" color="grey" size={20} />
-        </TouchableOpacity>
-
-        {/* Text */}
-        <Text
-          style={{
-            bottom: 5,
-            fontSize: 19,
-            marginLeft: 68,
-            fontWeight: "bold",
-          }}
-        >
-          {noteCount}
-        </Text>
-
-        {/* AddCount */}
-        <TouchableOpacity
-          style={{
-            top: -29,
-            marginLeft: 95,
-            backgroundColor: "#fff",
-            borderColor: "grey",
-            borderWidth: 1,
-            borderRadius: 20,
-            justifyContent: "center",
-            alignItems: "center",
-            width: 23,
-            height: 23,
-          }}
-          onPress={handleIncrement}
-        >
-          <FontAwesome5 name="plus" size={15} color="black" />
-        </TouchableOpacity>
-
-        {/* Add to cart */}
-        <TouchableOpacity onPress={() => navigation.navigate("Details")}>
-          <View
+        <View style={{ flexDirection: "row", alignItems: "center", top: 2 }}>
+          <TouchableOpacity
             style={{
-              bottom: 55,
-              marginLeft: 200,
-              backgroundColor: "black",
+              marginLeft: 30,
+              backgroundColor: "#fff",
+              borderColor: "grey",
+              borderWidth: 1,
               borderRadius: 20,
               justifyContent: "center",
               alignItems: "center",
-              width: 150,
-              height: 40,
+              width: 23,
+              height: 23,
+            }}
+            onPress={handleDecrement}
+          >
+            <AntDesign name="minus" color="grey" size={20} />
+          </TouchableOpacity>
+
+          {/* Text */}
+          <Text
+            style={{
+              fontSize: 19,
+              marginHorizontal: 10,
+              fontWeight: "bold",
             }}
           >
-            <Text style={{ color: "#fff", fontSize: 17 }}>Add to cart</Text>
-          </View>
-        </TouchableOpacity>
+            {noteCount}
+          </Text>
+
+          {/* AddCount */}
+          <TouchableOpacity
+            style={{
+              backgroundColor: "#fff",
+              borderColor: "grey",
+              borderWidth: 1,
+              borderRadius: 20,
+              justifyContent: "center",
+              alignItems: "center",
+              width: 23,
+              height: 23,
+            }}
+            onPress={handleIncrement}
+          >
+            <FontAwesome5 name="plus" size={15} color="black" />
+          </TouchableOpacity>
+          {/* Add to cart */}
+          <TouchableOpacity onPress={() => navigation.navigate("Details")}>
+            <View
+              style={{
+                marginLeft: 65,
+                backgroundColor: "black",
+                borderRadius: 20,
+                justifyContent: "center",
+                alignItems: "center",
+                width: "100%",
+                height: 40,
+                marginTop: 10,
+              }}
+            >
+              <Text style={{ color: "#fff", fontSize: 17 }}>Add to cart</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
